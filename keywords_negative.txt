@@ -1,0 +1,1 @@
+[('country', 54), ('big', 54), ('bad', 64), ('now', 67), ('very', 68), ('trump', 69), ('people', 77), ('media', 85), ('news', 159), ('fake', 173)]

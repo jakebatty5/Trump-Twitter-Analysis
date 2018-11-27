@@ -45,5 +45,8 @@ if proceed == 'yes':
 		else:
 			sentiment = 'neutral'
 		cur.execute(trump_sql, (message, polarity, subjectivity, sentiment))
+	con.commit()
+cur.execute("SELECT * from trump_tweets")
+print(cur.fetchall())
+con.close()
 
-print(pd.read_sql_query("SELECT * FROM trump_tweets", con))

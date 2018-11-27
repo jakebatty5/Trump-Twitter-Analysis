@@ -1,0 +1,1 @@
+[('big', 133), ('tax', 140), ('today', 144), ('many', 159), ('thank', 159), ('more', 164), ('people', 178), ('very', 181), ('america', 183), ('great', 643)]

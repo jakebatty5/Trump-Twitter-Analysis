@@ -22,6 +22,7 @@ count = 0
 
 general_sql = "INSERT INTO general_tweets (tweet_message, polarity, subjectivity, sentiment) VALUES (?, ?, ?, ?)"
 
+
 for tweet in tweepy.Cursor(api.search, lang='en', q="a").items():
 	analysis = TextBlob(clean_text(tweet.text))
 	polarity = analysis.sentiment.polarity
@@ -34,4 +35,7 @@ for tweet in tweepy.Cursor(api.search, lang='en', q="a").items():
 		sentiment = 'neutral'
 	cur.execute(general_sql, (tweet.text, polarity, subjectivity, sentiment))
 	count = count + 1
-	if count > 5: break
+	if count > 500: break
+
+con.commit()
+con.close()

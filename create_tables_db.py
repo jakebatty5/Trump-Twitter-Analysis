@@ -36,5 +36,4 @@ if proceed == 'yes':
 	cur.execute(trump_tweets_sql)
 	cur.execute(trump_responses_sql)
 
-cur.execute("SELECT * FROM trump_tweets")
-print(cur.fetchall())
+con.close()

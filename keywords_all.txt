@@ -1,0 +1,1 @@
+[('today', 216), ('president', 219), ('america', 225), ('thank', 228), ('fake', 231), ('trump', 240), ('very', 251), ('news', 260), ('people', 293), ('great', 660)]
